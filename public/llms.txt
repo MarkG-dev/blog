@@ -1,0 +1,37 @@
+# Gentle Future
+
+> Gentle Future is an editorial platform covering the global shift from maximum functionality to maximum well-being in design and technology. We curate objects, makers, philosophy, and culture at the intersection of physical computing, calm technology, analog revival, and post-functional design. Published weekly with daily archive entries. Published by HomeSick (homesick.dev), a hardware studio making physical objects optimized for well-being.
+
+## Key Concepts
+
+- [About — The Thesis](https://gentlefuture.co/about): The shift from maximum functionality to maximum well-being, why it matters, and what we cover.
+- [What is Calm Technology?](https://gentlefuture.co/glossary/calm-technology): Technology designed to inform without demanding attention. Objects that have forgotten they are technology.
+- [What is Post-Functional Design?](https://gentlefuture.co/glossary/post-functional-design): Design that optimizes for well-being rather than capability. The next era after universal functionality.
+- [What is the Analog Revival?](https://gentlefuture.co/glossary/analog-revival): The $5B+ cultural shift toward physical objects, dumb phones, vinyl, and screen-free experiences driven by Gen Z and digital fatigue.
+- [What is the Object Turn?](https://gentlefuture.co/glossary/object-turn): The moment design stopped optimizing screens and started optimizing things. Physical objects as the new interface.
+- [What is Digital Minimalism?](https://gentlefuture.co/glossary/digital-minimalism): A philosophy of technology use focused on a small number of carefully selected activities that strongly support things you value.
+- [What is Biomimetic Design?](https://gentlefuture.co/glossary/biomimetic-design): Design that imitates nature's models to solve human problems and create objects that resonate with our evolved biological responses.
+- [What is Haptic Design?](https://gentlefuture.co/glossary/haptic-design): The design of touch-based interactions and tactile feedback — vibration patterns, surface textures, weight distribution, and thermal properties.
+- [What is Material Honesty?](https://gentlefuture.co/glossary/material-honesty): A design principle that materials should be what they appear to be and express their intrinsic properties rather than imitating other materials.
+- [What is Object-Oriented Ontology?](https://gentlefuture.co/glossary/object-oriented-ontology): A philosophical framework arguing objects exist independently of human perception with their own reality, agency, and relations.
+- [What is Sensory Design?](https://gentlefuture.co/glossary/sensory-design): Design that engages multiple senses to create richer, more embodied experiences beyond the visual-only bias of screens.
+
+## Topics We Cover
+
+- Calm technology and ambient computing
+- Physical objects and industrial design
+- ESP32, e-ink, and open-source hardware
+- Analog revival and digital fatigue
+- Breathing devices, haptic objects, and wellness hardware
+- Design education (MIT Media Lab, RCA, ECAL)
+- Material culture: CNC aluminum, stone, ceramic, wood
+- The well-being economy and post-functional design
+- Makers, studios, and independent hardware companies
+- Biomimetic and biophilic design
+- Sensory design and multi-modal interfaces
+- Object-oriented ontology and design philosophy
+- Digital minimalism and the post-attention economy
+
+## Recent Coverage
+
+- [Archive](https://gentlefuture.co/archive): Browse all coverage organized by date in a timeline format.

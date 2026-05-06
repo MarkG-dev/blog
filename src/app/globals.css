@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gf-black: #0a0a0a;
+  --gf-dark: #111111;
+  --gf-surface: #1a1a1a;
+  --gf-border: #2a2a2a;
+  --gf-muted: #666666;
+  --gf-text: #e0e0e0;
+  --gf-white: #f0f0f0;
+  --gf-accent: #c8b8a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--gf-black);
+  color: var(--gf-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background: var(--gf-accent);
+  color: var(--gf-black);
+}
+
+/* Subtle noise grain overlay — Spacecadet atmospheric texture */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Article body typography */
+.article-body {
+  @apply text-base leading-relaxed;
+}
+
+.article-body p {
+  @apply mb-6;
+}
+
+.article-body h2 {
+  @apply text-xl font-semibold mt-10 mb-4 text-gf-white;
+}
+
+.article-body h3 {
+  @apply text-lg font-medium mt-8 mb-3 text-gf-white;
+}
+
+.article-body a {
+  @apply text-gf-accent underline underline-offset-2 hover:opacity-80 transition-opacity;
+}
+
+.article-body blockquote {
+  @apply border-l-2 border-gf-accent pl-4 my-6 italic text-gf-muted;
+}
+
+.article-body img {
+  @apply rounded-sm my-8 w-full;
+}
+
+.article-body ul, .article-body ol {
+  @apply mb-6 pl-6;
+}
+
+.article-body li {
+  @apply mb-2;
+}
+
+/* Figure captions */
+.article-body figcaption {
+  @apply text-xs text-gf-muted mt-2 font-mono;
+}
+
+/* Timeline sidebar */
+.timeline-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gf-border) transparent;
+}
+
+.timeline-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.timeline-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.timeline-sidebar::-webkit-scrollbar-thumb {
+  background: var(--gf-border);
+  border-radius: 2px;
+}
+
+/* Audio player */
+.audio-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gf-accent);
+  cursor: pointer;
+}
+
+.audio-progress::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gf-accent);
+  cursor: pointer;
+  border: none;
+}
+
+/* Mobile thumb scrubber */
+.scrubber-track {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.scrubber-item {
+  scroll-snap-align: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Slow fade for hero elements */
+@keyframes fadeInSlow {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-slow {
+  animation: fadeInSlow 0.8s ease-out forwards;
+}
+
+/* Stagger children animation */
+@keyframes staggerIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stagger-in > * {
+  animation: staggerIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.stagger-in > *:nth-child(1) { animation-delay: 0s; }
+.stagger-in > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger-in > *:nth-child(3) { animation-delay: 0.2s; }
+.stagger-in > *:nth-child(4) { animation-delay: 0.3s; }
+.stagger-in > *:nth-child(5) { animation-delay: 0.4s; }
+.stagger-in > *:nth-child(6) { animation-delay: 0.5s; }
+.stagger-in > *:nth-child(7) { animation-delay: 0.6s; }
+
+/* Hide scrollbar for mobile scrubber */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Tabular numbers for clock */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

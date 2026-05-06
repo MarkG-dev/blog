@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# next.js
+.next/
+/out/
+
+# production
+/build
+
+# env files — NEVER commit API keys
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# reference images (design refs, not site assets)
+*.png
+!public/**/*.png
+
+# strategy docs (kept locally, not in repo)
+gentle-future/
