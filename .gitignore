@@ -31,3 +31,6 @@ next-env.d.ts
 
 # strategy docs (kept locally, not in repo)
 gentle-future/
+
+# installers
+*.pkg
